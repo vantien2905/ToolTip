@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +12,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppDropdown" customModule="Bizkasa" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppDropdown" customModule="ToolDuong" customModuleProvider="target">
             <connections>
                 <outlet property="actionButton" destination="PNd-Xa-uUa" id="1QL-a9-zO2"/>
                 <outlet property="imgArrow" destination="B29-T1-fJf" id="86X-YN-Rxb"/>
@@ -27,30 +26,30 @@
             <rect key="frame" x="0.0" y="0.0" width="449" height="101"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-cY-R62">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-cY-R62">
                     <rect key="frame" x="0.0" y="0.0" width="449" height="96"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ai1-gm-t1I" customClass="AppTitleLogo" customModule="Bizkasa" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="449" height="20"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ai1-gm-t1I" customClass="AppTitleLogo" customModule="ToolDuong" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="449" height="18"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="20" id="sTe-2b-X2P"/>
+                                <constraint firstAttribute="height" constant="18" id="sTe-2b-X2P"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OKz-sa-DwW">
-                            <rect key="frame" x="0.0" y="30" width="449" height="66"/>
+                            <rect key="frame" x="0.0" y="18" width="449" height="78"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-x5-c2B">
-                                    <rect key="frame" x="0.0" y="0.0" width="419" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="419" height="78"/>
                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUg-tF-HyM">
-                                    <rect key="frame" x="429" y="0.0" width="20" height="66"/>
+                                    <rect key="frame" x="429" y="0.0" width="20" height="78"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B29-T1-fJf">
-                                            <rect key="frame" x="0.0" y="23" width="20" height="20"/>
+                                            <rect key="frame" x="0.0" y="29" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="B29-T1-fJf" secondAttribute="height" multiplier="1:1" id="tGm-SC-Owm"/>
                                             </constraints>

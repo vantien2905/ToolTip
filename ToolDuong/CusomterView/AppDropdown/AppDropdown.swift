@@ -6,7 +6,6 @@
 //  Copyright © 2019 Lac Viet Corp. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import DropDown
 
@@ -20,7 +19,7 @@ class AppDropdown: BaseViewXib {
 
     let dropdown = DropDown()
     
-    var itemSelected = -1
+    var itemSelected = 0
 
     var dropDownCallBack: ((_ index: Int, _ item: String) -> Void)?
     
@@ -50,13 +49,13 @@ class AppDropdown: BaseViewXib {
         vBottom.isHidden = true
     }
 
-    func setTitleAndLogo(_ image: UIImage, title: String) {
-        vTitle.setTitleAndLogo(image, title: title)
+    func setTitle(_ title: String) {
+        vTitle.setTitleAndLogo(title)
     }
 
-    private func configureDropDown() {
-        self.setColor(AppColor.normalGray)
-        imgArrow.image = AppImage.imgDropdown
+    func configureDropDown() {
+        self.setColor(UIColor.gray)
+//        imgArrow.image = .green
         dropdown.anchorView = vBottom
         dropdown.bottomOffset = CGPoint(x: 0,
                                         y:(dropdown.anchorView?.plainView.bounds.height)!)
@@ -72,16 +71,16 @@ class AppDropdown: BaseViewXib {
             guard let cell = cell as? DropdownSelectedCell else { return }
            
             cell.title.text = self.dataSource[index].uppercased()
-            cell.img.image =  self.itemSelected == index
-                ? AppImage.selected
-                : AppImage.unselected
+//            cell.img.image =  self.itemSelected == index
+//                ? AppImage.selected
+//                : AppImage.unselected
         }
         
         dropdown.selectionAction = { [weak self] (index: Int, item: String) in
             guard let self = self else { return }
             self.itemSelected = index
             self.imgArrow.rotateView(0.0)
-            self.setColor(AppColor.normalGray)
+            self.setColor(UIColor.gray)
             self.lbContent.text = item
             self.dropDownCallBack?(index, item)
             self.dropdown.reloadAllComponents()
@@ -90,13 +89,13 @@ class AppDropdown: BaseViewXib {
         dropdown.willShowAction = { [weak self] in
             guard let self = self else { return }
             self.imgArrow.rotateView(.pi)
-            self.setColor(AppColor.dropdown)
+            self.setColor(UIColor.green)
         }
 
         dropdown.cancelAction = { [weak self] in
             guard let self = self else { return }
             self.imgArrow.rotateView(0.0)
-            self.setColor(AppColor.normalGray)
+            self.setColor(UIColor.green)
         }
     }
     
@@ -106,7 +105,6 @@ class AppDropdown: BaseViewXib {
     }
 
     private func setColor(_ color: UIColor) {
-        self.imgArrow.tintColor = color
         self.vBottom.backgroundColor = color
     }
     
@@ -120,5 +118,9 @@ class AppDropdown: BaseViewXib {
 
     @IBAction func btnDropdownTapped() {
         dropdown.show()
+    }
+    
+    func getContentInt() -> Int {
+        return Int(lbContent.text&) ?? 0
     }
 }

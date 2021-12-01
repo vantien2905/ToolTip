@@ -11,14 +11,12 @@ import UIKit
 
 class AppTitleLogo: BaseViewXib {
     @IBOutlet weak var lbTitle: UILabel!
-    @IBOutlet weak var imgLogo: UIImageView!
 
-    func setTitleAndLogo(_ image: UIImage, title: String) {
-        imgLogo.image = image
+    func setTitleAndLogo(_ title: String) {
         lbTitle.text = title
     }
     
     func setBold(){
-        lbTitle.font = UIFont.boldSystemFont(ofSize: 17 )
+        lbTitle.font = UIFont.boldSystemFont(ofSize: 13)
     }
 }
