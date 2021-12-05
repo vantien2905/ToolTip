@@ -1,0 +1,19 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "f074c4dfe5f64bd5a38084d1e1314c545bb3dd7da5cbdabb81ae5bc526a04724"
+build_start_time: [1638677123, 168172836]
+build_end_time: [1638677124, 292371034]
+inputs:
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/AppDelegate.swift": [1637932780, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/Cells/ResultsCell.swift": [1638456426, 123061656]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/AppDropdown/AppDropdown.swift": [1637989008, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/AppTitleLogo/AppTitleLogo.swift": [1637988612, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/Base/BaseView.swift": [1623218436, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/Base/BaseViewXib.swift": [1623218436, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/DropdownCell/ActionDropdownCell.swift": [1623218436, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/DropdownCell/DropdownSelectedCell.swift": [1623218436, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/Extension+UIViewController.swift": [1637995748, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/CusomterView/UIView+Extension.swift": [1623218436, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/NftModel.swift": [1637993093, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/SceneDelegate.swift": [1637932780, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/String+Extension.swift": [1637978800, 0]
+  "/Users/quanghieu/Desktop/ToolDuong/ToolDuong/ViewController.swift": [1638677122, 859987735]

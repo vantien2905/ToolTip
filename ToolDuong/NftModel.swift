@@ -84,6 +84,14 @@ class NFTModel: BaseEntity{
     func isActive() -> Bool {
         return self.status == "active"
     }
+    
+    func getLinkMerket() -> URL? {
+        return URL(string: "\(linkBuy + id&)")
+    }
+    
+    func getScore() -> Int {
+        return  Int(score&) ?? 0
+    }
 }
 
 

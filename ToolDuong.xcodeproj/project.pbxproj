@@ -7,30 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA760922755E56300930F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA760912755E56300930F73 /* ViewController.swift */; };
+		4CA760942755E5D500930F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA760932755E5D500930F73 /* Main.storyboard */; };
 		6FB2A505B875FD4E4493B1BA /* Pods_ToolDuong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1F50324E74824B790BC629 /* Pods_ToolDuong.framework */; };
 		DF1C11492751166C0019B6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C11482751166C0019B6DA /* AppDelegate.swift */; };
 		DF1C114B2751166C0019B6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C114A2751166C0019B6DA /* SceneDelegate.swift */; };
-		DF1C114D2751166C0019B6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C114C2751166C0019B6DA /* ViewController.swift */; };
-		DF1C11502751166C0019B6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1C114E2751166C0019B6DA /* Main.storyboard */; };
 		DF1C11522751166D0019B6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1C11512751166D0019B6DA /* Assets.xcassets */; };
 		DF1C11552751166D0019B6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1C11532751166D0019B6DA /* LaunchScreen.storyboard */; };
 		DF51C1282751BE36001A7146 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1272751BE36001A7146 /* String+Extension.swift */; };
+		DF51C1562751D5FA001A7146 /* AppDropdown.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C14C2751D5F9001A7146 /* AppDropdown.xib */; };
+		DF51C1572751D5FA001A7146 /* AppDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C14D2751D5F9001A7146 /* AppDropdown.swift */; };
+		DF51C15A2751D5FA001A7146 /* ActionDropdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C1522751D5FA001A7146 /* ActionDropdownCell.xib */; };
+		DF51C15B2751D5FA001A7146 /* DropdownSelectedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1532751D5FA001A7146 /* DropdownSelectedCell.swift */; };
+		DF51C15C2751D5FA001A7146 /* DropdownSelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C1542751D5FA001A7146 /* DropdownSelectedCell.xib */; };
+		DF51C15D2751D5FA001A7146 /* ActionDropdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1552751D5FA001A7146 /* ActionDropdownCell.swift */; };
+		DF51C1642751D652001A7146 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1622751D652001A7146 /* BaseView.swift */; };
+		DF51C1652751D652001A7146 /* BaseViewXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1632751D652001A7146 /* BaseViewXib.swift */; };
+		DF51C16B2751D68F001A7146 /* AppTitleLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1692751D68F001A7146 /* AppTitleLogo.swift */; };
+		DF51C16C2751D68F001A7146 /* AppTitleLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C16A2751D68F001A7146 /* AppTitleLogo.xib */; };
+		DF51C16F2751D6C6001A7146 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C16E2751D6C6001A7146 /* UIView+Extension.swift */; };
+		DF51C1752751E91C001A7146 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1732751E91C001A7146 /* ResultsCell.swift */; };
+		DF51C1762751E91C001A7146 /* ResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C1742751E91C001A7146 /* ResultsCell.xib */; };
+		DF51C17A27520C4D001A7146 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C17927520C4D001A7146 /* Extension+UIViewController.swift */; };
 		DF92524527511C4C0022204D /* NftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92524427511C4C0022204D /* NftModel.swift */; };
+		DF97F871275C76E0007B0344 /* FilterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF97F86F275C76E0007B0344 /* FilterCollectionCell.swift */; };
+		DF97F872275C76E0007B0344 /* FilterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF97F870275C76E0007B0344 /* FilterCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46DFD1815A51DEBD8D0CFF9F /* Pods-ToolDuong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolDuong.debug.xcconfig"; path = "Target Support Files/Pods-ToolDuong/Pods-ToolDuong.debug.xcconfig"; sourceTree = "<group>"; };
+		4CA760902755E4AB00930F73 /* ToolDuong.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolDuong.entitlements; sourceTree = "<group>"; };
+		4CA760912755E56300930F73 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CA760932755E5D500930F73 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		55C587EF47DC68A3F00FF535 /* Pods-ToolDuong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolDuong.release.xcconfig"; path = "Target Support Files/Pods-ToolDuong/Pods-ToolDuong.release.xcconfig"; sourceTree = "<group>"; };
 		DF1C11452751166C0019B6DA /* ToolDuong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolDuong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1C11482751166C0019B6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF1C114A2751166C0019B6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF1C114C2751166C0019B6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF1C114F2751166C0019B6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF1C11512751166D0019B6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1C11542751166D0019B6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1C11562751166D0019B6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF51C1272751BE36001A7146 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DF51C14C2751D5F9001A7146 /* AppDropdown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDropdown.xib; sourceTree = "<group>"; };
+		DF51C14D2751D5F9001A7146 /* AppDropdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDropdown.swift; sourceTree = "<group>"; };
+		DF51C1522751D5FA001A7146 /* ActionDropdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionDropdownCell.xib; sourceTree = "<group>"; };
+		DF51C1532751D5FA001A7146 /* DropdownSelectedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownSelectedCell.swift; sourceTree = "<group>"; };
+		DF51C1542751D5FA001A7146 /* DropdownSelectedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownSelectedCell.xib; sourceTree = "<group>"; };
+		DF51C1552751D5FA001A7146 /* ActionDropdownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDropdownCell.swift; sourceTree = "<group>"; };
+		DF51C1622751D652001A7146 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DF51C1632751D652001A7146 /* BaseViewXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewXib.swift; sourceTree = "<group>"; };
+		DF51C1692751D68F001A7146 /* AppTitleLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTitleLogo.swift; sourceTree = "<group>"; };
+		DF51C16A2751D68F001A7146 /* AppTitleLogo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppTitleLogo.xib; sourceTree = "<group>"; };
+		DF51C16E2751D6C6001A7146 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DF51C1732751E91C001A7146 /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
+		DF51C1742751E91C001A7146 /* ResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsCell.xib; sourceTree = "<group>"; };
+		DF51C17927520C4D001A7146 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		DF92524427511C4C0022204D /* NftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftModel.swift; sourceTree = "<group>"; };
+		DF97F86F275C76E0007B0344 /* FilterCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionCell.swift; sourceTree = "<group>"; };
+		DF97F870275C76E0007B0344 /* FilterCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionCell.xib; sourceTree = "<group>"; };
 		FF1F50324E74824B790BC629 /* Pods_ToolDuong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolDuong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,10 +118,14 @@
 		DF1C11472751166C0019B6DA /* ToolDuong */ = {
 			isa = PBXGroup;
 			children = (
+				DF97F86E275C76AA007B0344 /* CollectionCells */,
+				4CA760932755E5D500930F73 /* Main.storyboard */,
+				4CA760912755E56300930F73 /* ViewController.swift */,
+				4CA760902755E4AB00930F73 /* ToolDuong.entitlements */,
+				DF51C1722751E901001A7146 /* Cells */,
+				DF51C1602751D617001A7146 /* CusomterView */,
 				DF1C11482751166C0019B6DA /* AppDelegate.swift */,
 				DF1C114A2751166C0019B6DA /* SceneDelegate.swift */,
-				DF1C114C2751166C0019B6DA /* ViewController.swift */,
-				DF1C114E2751166C0019B6DA /* Main.storyboard */,
 				DF1C11512751166D0019B6DA /* Assets.xcassets */,
 				DF1C11532751166D0019B6DA /* LaunchScreen.storyboard */,
 				DF1C11562751166D0019B6DA /* Info.plist */,
@@ -96,6 +133,75 @@
 				DF51C1272751BE36001A7146 /* String+Extension.swift */,
 			);
 			path = ToolDuong;
+			sourceTree = "<group>";
+		};
+		DF51C14B2751D5F9001A7146 /* AppDropdown */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C14C2751D5F9001A7146 /* AppDropdown.xib */,
+				DF51C14D2751D5F9001A7146 /* AppDropdown.swift */,
+			);
+			path = AppDropdown;
+			sourceTree = "<group>";
+		};
+		DF51C1512751D5FA001A7146 /* DropdownCell */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C1522751D5FA001A7146 /* ActionDropdownCell.xib */,
+				DF51C1532751D5FA001A7146 /* DropdownSelectedCell.swift */,
+				DF51C1542751D5FA001A7146 /* DropdownSelectedCell.xib */,
+				DF51C1552751D5FA001A7146 /* ActionDropdownCell.swift */,
+			);
+			path = DropdownCell;
+			sourceTree = "<group>";
+		};
+		DF51C1602751D617001A7146 /* CusomterView */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C16E2751D6C6001A7146 /* UIView+Extension.swift */,
+				DF51C1682751D68F001A7146 /* AppTitleLogo */,
+				DF51C14B2751D5F9001A7146 /* AppDropdown */,
+				DF51C1512751D5FA001A7146 /* DropdownCell */,
+				DF51C1612751D63D001A7146 /* Base */,
+				DF51C17927520C4D001A7146 /* Extension+UIViewController.swift */,
+			);
+			path = CusomterView;
+			sourceTree = "<group>";
+		};
+		DF51C1612751D63D001A7146 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C1622751D652001A7146 /* BaseView.swift */,
+				DF51C1632751D652001A7146 /* BaseViewXib.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DF51C1682751D68F001A7146 /* AppTitleLogo */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C1692751D68F001A7146 /* AppTitleLogo.swift */,
+				DF51C16A2751D68F001A7146 /* AppTitleLogo.xib */,
+			);
+			path = AppTitleLogo;
+			sourceTree = "<group>";
+		};
+		DF51C1722751E901001A7146 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C1732751E91C001A7146 /* ResultsCell.swift */,
+				DF51C1742751E91C001A7146 /* ResultsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DF97F86E275C76AA007B0344 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				DF97F86F275C76E0007B0344 /* FilterCollectionCell.swift */,
+				DF97F870275C76E0007B0344 /* FilterCollectionCell.xib */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF97F872275C76E0007B0344 /* FilterCollectionCell.xib in Resources */,
 				DF1C11552751166D0019B6DA /* LaunchScreen.storyboard in Resources */,
 				DF1C11522751166D0019B6DA /* Assets.xcassets in Resources */,
-				DF1C11502751166C0019B6DA /* Main.storyboard in Resources */,
+				DF51C1762751E91C001A7146 /* ResultsCell.xib in Resources */,
+				4CA760942755E5D500930F73 /* Main.storyboard in Resources */,
+				DF51C15A2751D5FA001A7146 /* ActionDropdownCell.xib in Resources */,
+				DF51C16C2751D68F001A7146 /* AppTitleLogo.xib in Resources */,
+				DF51C1562751D5FA001A7146 /* AppDropdown.xib in Resources */,
+				DF51C15C2751D5FA001A7146 /* DropdownSelectedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +324,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1C114D2751166C0019B6DA /* ViewController.swift in Sources */,
+				DF51C15D2751D5FA001A7146 /* ActionDropdownCell.swift in Sources */,
+				DF51C1572751D5FA001A7146 /* AppDropdown.swift in Sources */,
 				DF1C11492751166C0019B6DA /* AppDelegate.swift in Sources */,
+				DF51C15B2751D5FA001A7146 /* DropdownSelectedCell.swift in Sources */,
+				4CA760922755E56300930F73 /* ViewController.swift in Sources */,
+				DF51C1652751D652001A7146 /* BaseViewXib.swift in Sources */,
+				DF51C16F2751D6C6001A7146 /* UIView+Extension.swift in Sources */,
 				DF92524527511C4C0022204D /* NftModel.swift in Sources */,
+				DF97F871275C76E0007B0344 /* FilterCollectionCell.swift in Sources */,
+				DF51C17A27520C4D001A7146 /* Extension+UIViewController.swift in Sources */,
+				DF51C1642751D652001A7146 /* BaseView.swift in Sources */,
+				DF51C16B2751D68F001A7146 /* AppTitleLogo.swift in Sources */,
 				DF51C1282751BE36001A7146 /* String+Extension.swift in Sources */,
+				DF51C1752751E91C001A7146 /* ResultsCell.swift in Sources */,
 				DF1C114B2751166C0019B6DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +345,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF1C114E2751166C0019B6DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF1C114F2751166C0019B6DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF1C11532751166D0019B6DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,14 +478,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToolDuong/ToolDuong.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8256U8UK5C;
 				INFOPLIST_FILE = ToolDuong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = duong.com.duongtool;
+				PRODUCT_BUNDLE_IDENTIFIER = tien.tool.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,14 +502,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToolDuong/ToolDuong.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGRXCGAUA5;
 				INFOPLIST_FILE = ToolDuong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = duong.com.duongtool;
+				PRODUCT_BUNDLE_IDENTIFIER = duong.com.duongtool1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

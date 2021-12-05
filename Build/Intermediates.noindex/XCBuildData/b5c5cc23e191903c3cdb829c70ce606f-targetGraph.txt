@@ -1,0 +1,16 @@
+Target dependency graph (6 targets)
+Alamofire in Pods, no dependencies
+DropDown in Pods, no dependencies
+ObjectMapper in Pods, no dependencies
+SwiftyJSON in Pods, no dependencies
+Pods-ToolDuong in Pods, depends on:
+Alamofire in Pods (explicit)
+DropDown in Pods (explicit)
+ObjectMapper in Pods (explicit)
+SwiftyJSON in Pods (explicit)
+ToolDuong in ToolDuong, depends on:
+Pods-ToolDuong in Pods (implicit dependency via file 'Pods_ToolDuong.framework' in build phase 'Link Binary')
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS')
+DropDown in Pods (implicit dependency via options '-framework DropDown' in build setting 'OTHER_LDFLAGS')
+ObjectMapper in Pods (implicit dependency via options '-framework ObjectMapper' in build setting 'OTHER_LDFLAGS')
+SwiftyJSON in Pods (implicit dependency via options '-framework SwiftyJSON' in build setting 'OTHER_LDFLAGS')

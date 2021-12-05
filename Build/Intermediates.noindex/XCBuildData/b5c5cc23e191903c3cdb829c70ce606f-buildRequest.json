@@ -1,0 +1,58 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "82d144b42420a16600b7d68fe37b29ea32d024f2b70c934bd264f26ced2fcc78"
+    }
+  ],
+  "containerPath" : "/Users/quanghieu/Desktop/ToolDuong/ToolDuong.xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.0",
+      "sdkVariant" : "iosmac",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/quanghieu/Desktop/ToolDuong/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/quanghieu/Desktop/ToolDuong/Build/Products",
+      "derivedDataPath" : "/Users/quanghieu/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/quanghieu/Library/Developer/Xcode/DerivedData/ToolDuong-ctlfczjzbcclxehjudlroftmfamu/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/quanghieu/Library/Developer/Xcode/DerivedData/ToolDuong-ctlfczjzbcclxehjudlroftmfamu/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/quanghieu/Desktop/ToolDuong/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
