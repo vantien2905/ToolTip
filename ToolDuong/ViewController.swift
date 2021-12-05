@@ -122,10 +122,15 @@ class ViewController: UIViewController {
         
         searchDameView.dataSource = rangeSearch
         
-        maxPrice.text = "890"
-        minPrice.text = "550"
-        maxPriceYouWantBuy.text = "600"
-        highlightPrice.text = "600"
+        maxPrice.text = UserDefaultHelper.shared.getInt(.maxPrice) == 0 ? "890" : "\(UserDefaultHelper.shared.getInt(.maxPrice))"
+        minPrice.text = UserDefaultHelper.shared.getInt(.minPrice) == 0 ? "550" : "\(UserDefaultHelper.shared.getInt(.minPrice))"
+        maxPriceYouWantBuy.text = UserDefaultHelper.shared.getInt(.wantBuyPrice) == 0 ? "600" : "\(UserDefaultHelper.shared.getInt(.wantBuyPrice))"
+        highlightPrice.text = UserDefaultHelper.shared.getInt(.hightlightPrice) == 0 ? "600" : "\(UserDefaultHelper.shared.getInt(.hightlightPrice))"
+        
+        maxPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        minPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        maxPriceYouWantBuy.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        highlightPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         
         searchDameView.dropDownCallBack = { [weak self] index, item in
             guard let self = self else { return }
@@ -139,6 +144,7 @@ class ViewController: UIViewController {
         
         maxPriceDropdown.selectionAction = {[weak self] index, item in
             self?.maxPrice.text = item
+            UserDefaultHelper.shared.setData(item.toInt(), key: .maxPrice)
         }
         
         minPrice.keyboardType = .numberPad
@@ -386,5 +392,23 @@ extension ViewController: FilterCollectionCellDelegate {
         self.filterDameSelected = dame
         self.listNFTResult = self.listOrigin.filter({$0.score == "\(dame)"})
         collectionView.reloadData()
+    }
+}
+
+extension ViewController {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        switch textField {
+        case minPrice:
+            UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .minPrice)
+        case maxPrice:
+            UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .maxPrice)
+        case maxPriceYouWantBuy:
+            UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .wantBuyPrice)
+        case highlightPrice:
+            UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .hightlightPrice)
+        default:
+            break
+        }
     }
 }

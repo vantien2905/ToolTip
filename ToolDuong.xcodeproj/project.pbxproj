@@ -29,6 +29,7 @@
 		DF51C1752751E91C001A7146 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1732751E91C001A7146 /* ResultsCell.swift */; };
 		DF51C1762751E91C001A7146 /* ResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF51C1742751E91C001A7146 /* ResultsCell.xib */; };
 		DF51C17A27520C4D001A7146 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C17927520C4D001A7146 /* Extension+UIViewController.swift */; };
+		DF5FD277275C9C9E006FA2B9 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FD276275C9C9E006FA2B9 /* UserDefaultHelper.swift */; };
 		DF92524527511C4C0022204D /* NftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92524427511C4C0022204D /* NftModel.swift */; };
 		DF97F871275C76E0007B0344 /* FilterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF97F86F275C76E0007B0344 /* FilterCollectionCell.swift */; };
 		DF97F872275C76E0007B0344 /* FilterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF97F870275C76E0007B0344 /* FilterCollectionCell.xib */; };
@@ -61,6 +62,7 @@
 		DF51C1732751E91C001A7146 /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
 		DF51C1742751E91C001A7146 /* ResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsCell.xib; sourceTree = "<group>"; };
 		DF51C17927520C4D001A7146 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		DF5FD276275C9C9E006FA2B9 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		DF92524427511C4C0022204D /* NftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftModel.swift; sourceTree = "<group>"; };
 		DF97F86F275C76E0007B0344 /* FilterCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionCell.swift; sourceTree = "<group>"; };
 		DF97F870275C76E0007B0344 /* FilterCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionCell.xib; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		DF1C11472751166C0019B6DA /* ToolDuong */ = {
 			isa = PBXGroup;
 			children = (
+				DF5FD275275C9C7F006FA2B9 /* Helper */,
 				DF97F86E275C76AA007B0344 /* CollectionCells */,
 				4CA760932755E5D500930F73 /* Main.storyboard */,
 				4CA760912755E56300930F73 /* ViewController.swift */,
@@ -193,6 +196,14 @@
 				DF51C1742751E91C001A7146 /* ResultsCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DF5FD275275C9C7F006FA2B9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FD276275C9C9E006FA2B9 /* UserDefaultHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		DF97F86E275C76AA007B0344 /* CollectionCells */ = {
@@ -330,6 +341,7 @@
 				DF51C15B2751D5FA001A7146 /* DropdownSelectedCell.swift in Sources */,
 				4CA760922755E56300930F73 /* ViewController.swift in Sources */,
 				DF51C1652751D652001A7146 /* BaseViewXib.swift in Sources */,
+				DF5FD277275C9C9E006FA2B9 /* UserDefaultHelper.swift in Sources */,
 				DF51C16F2751D6C6001A7146 /* UIView+Extension.swift in Sources */,
 				DF92524527511C4C0022204D /* NftModel.swift in Sources */,
 				DF97F871275C76E0007B0344 /* FilterCollectionCell.swift in Sources */,
