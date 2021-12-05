@@ -14,6 +14,7 @@ protocol FilterCollectionCellDelegate: AnyObject {
 class FilterCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bgView: UIView!
     
     var dame: Int = 0
     
@@ -24,9 +25,10 @@ class FilterCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setData(_ index: Int) {
+    func setData(_ index: Int, isSelected: Bool) {
         dame = index
         titleLabel.text = "\(index)"
+        bgView.backgroundColor = isSelected ? .orange : .lightGray
     }
     
     @IBAction func filterButtonTapped() {

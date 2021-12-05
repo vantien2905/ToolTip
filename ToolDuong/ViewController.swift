@@ -67,6 +67,7 @@ class ViewController: UIViewController {
     let rangeInt =  [Int](315...330)
     
     let filterRange = [Int](319...325)
+    var filterDameSelected = 0
     
     
     let listErrorID = [1149820, 1150508, 1145376, 1146195]
@@ -89,6 +90,10 @@ class ViewController: UIViewController {
     private func configureCollectionView() {
         collectionView.register(UINib(nibName: "FilterCollectionCell", bundle: nil), forCellWithReuseIdentifier: "FilterCollectionCell")
         collectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 70, height: 40)
+        collectionView.collectionViewLayout = layout
     }
     
     private func setUpDropDown() {
@@ -106,6 +111,8 @@ class ViewController: UIViewController {
         minDameView.dataSource = rangeDame
         maxDameView.itemSelected = rangeDame.count - 1
         maxDameView.dataSource = rangeDame
+        
+        filterDameSelected = rangeDame[5].toInt()
         
         
         var rangeSearch = [String]()
@@ -368,19 +375,16 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionCell", for: indexPath) as! FilterCollectionCell
-        cell.setData(filterRange[indexPath.row])
+        cell.setData(filterRange[indexPath.row], isSelected: self.filterDameSelected == filterRange[indexPath.row])
         cell.delegate = self
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 80, height: 40)
     }
 }
 
 extension ViewController: FilterCollectionCellDelegate {
     func filterTapped(_ dame: Int) {
+        self.filterDameSelected = dame
         self.listNFTResult = self.listOrigin.filter({$0.score == "\(dame)"})
+        collectionView.reloadData()
     }
-    
 }
