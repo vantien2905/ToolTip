@@ -129,6 +129,12 @@ class ViewController: UIViewController {
         highlightPrice.text = UserDefaultHelper.shared.getInt(.hightlightPrice) == 0 ? "600" : "\(UserDefaultHelper.shared.getInt(.hightlightPrice))"
         totalPetNeedLoad.text = UserDefaultHelper.shared.getInt(.totalPet) == 0 ? "2000" : "\(UserDefaultHelper.shared.getInt(.totalPet))"
         
+        maxPrice.clearButtonMode = .whileEditing
+        minPrice.clearButtonMode = .whileEditing
+        maxPriceYouWantBuy.clearButtonMode = .whileEditing
+        highlightPrice.clearButtonMode = .whileEditing
+        totalPetNeedLoad.clearButtonMode = .whileEditing
+        
         maxPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         minPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         maxPriceYouWantBuy.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
@@ -152,6 +158,8 @@ class ViewController: UIViewController {
         minPrice.keyboardType = .numberPad
         maxPrice.keyboardType = .numberPad
         maxPriceYouWantBuy.keyboardType = .numberPad
+        totalPetNeedLoad.keyboardType = .numberPad
+        highlightPrice.keyboardType = .numberPad
         
     }
     
