@@ -18,16 +18,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-OC-VHA">
-                        <rect key="frame" x="7" y="0.0" width="161" height="94"/>
+                        <rect key="frame" x="3" y="0.0" width="169" height="94"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="319" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQJ-KU-D9v">
-                                <rect key="frame" x="0.0" y="0.0" width="161" height="94"/>
+                                <rect key="frame" x="0.0" y="0.0" width="169" height="94"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70c-oz-Pqc">
-                                <rect key="frame" x="0.0" y="0.0" width="161" height="94"/>
+                                <rect key="frame" x="0.0" y="0.0" width="169" height="94"/>
                                 <connections>
                                     <action selector="filterButtonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="V2E-zZ-yCP"/>
                                 </connections>
@@ -56,8 +56,8 @@
             <constraints>
                 <constraint firstItem="xQl-OC-VHA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cS0-0Q-v3c"/>
                 <constraint firstAttribute="bottom" secondItem="xQl-OC-VHA" secondAttribute="bottom" id="fGE-SI-eub"/>
-                <constraint firstAttribute="trailing" secondItem="xQl-OC-VHA" secondAttribute="trailing" constant="7" id="mnu-Ry-VR0"/>
-                <constraint firstItem="xQl-OC-VHA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="pn5-So-Nl6"/>
+                <constraint firstAttribute="trailing" secondItem="xQl-OC-VHA" secondAttribute="trailing" constant="3" id="mnu-Ry-VR0"/>
+                <constraint firstItem="xQl-OC-VHA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="pn5-So-Nl6"/>
             </constraints>
             <size key="customSize" width="175" height="94"/>
             <connections>

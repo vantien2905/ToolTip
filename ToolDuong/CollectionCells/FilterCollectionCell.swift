@@ -29,6 +29,7 @@ class FilterCollectionCell: UICollectionViewCell {
         dame = index
         titleLabel.text = "\(index)"
         bgView.backgroundColor = isSelected ? .orange : .lightGray
+        titleLabel.font = isSelected ? UIFont.systemFont(ofSize: 16, weight: .semibold) : UIFont.systemFont(ofSize: 16, weight: .regular)
     }
     
     @IBAction func filterButtonTapped() {

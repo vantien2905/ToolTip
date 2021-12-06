@@ -50,6 +50,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var maxPriceYouWantBuy: UITextField!
     @IBOutlet weak var highlightPrice: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var totalPetNeedLoad: UITextField!
     
     var rangeDame: [String] = []
     
@@ -92,7 +93,7 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 70, height: 40)
+        layout.itemSize = CGSize(width: 55, height: 34)
         collectionView.collectionViewLayout = layout
     }
     
@@ -126,6 +127,7 @@ class ViewController: UIViewController {
         minPrice.text = UserDefaultHelper.shared.getInt(.minPrice) == 0 ? "550" : "\(UserDefaultHelper.shared.getInt(.minPrice))"
         maxPriceYouWantBuy.text = UserDefaultHelper.shared.getInt(.wantBuyPrice) == 0 ? "600" : "\(UserDefaultHelper.shared.getInt(.wantBuyPrice))"
         highlightPrice.text = UserDefaultHelper.shared.getInt(.hightlightPrice) == 0 ? "600" : "\(UserDefaultHelper.shared.getInt(.hightlightPrice))"
+        totalPetNeedLoad.text = UserDefaultHelper.shared.getInt(.totalPet) == 0 ? "2000" : "\(UserDefaultHelper.shared.getInt(.totalPet))"
         
         maxPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         minPrice.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
@@ -282,8 +284,9 @@ class ViewController: UIViewController {
     }
     
     func requestNFT(success: @escaping RequestSuccessListNFT) {
+        let total = totalPetNeedLoad.text&
         // let urlString = "https://market-api.radiocaca.com/nft-sales?pageNo=1&pageSize=2000&sortBy=created_at&order=desc&name=&saleType&category=13"
-        let urlString = "https://market-api.radiocaca.com/nft-sales?pageNo=1&pageSize=2000&sortBy=single_price&name=&order=asc&saleType&category=13&tokenType"
+        let urlString = "https://market-api.radiocaca.com/nft-sales?pageNo=1&pageSize=\(total)&sortBy=single_price&name=&order=asc&saleType&category=13&tokenType"
         //let manager = Alamofire.SessionManager.default
         
         let request = AF.request(urlString, method: .get)
@@ -407,6 +410,8 @@ extension ViewController {
             UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .wantBuyPrice)
         case highlightPrice:
             UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .hightlightPrice)
+        case totalPetNeedLoad:
+            UserDefaultHelper.shared.setData(textField.text&.toInt(), key: .totalPet)
         default:
             break
         }

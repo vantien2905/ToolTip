@@ -12,6 +12,7 @@ enum UserDefaultKey: String {
     case maxPrice
     case hightlightPrice
     case wantBuyPrice
+    case totalPet
 }
 
 
